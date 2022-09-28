@@ -1,2 +1,2 @@
 # PCFCustomLib
-Custom code template for small PCFs
+Custom code template for smaller PCFs
