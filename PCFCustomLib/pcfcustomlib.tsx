@@ -11,8 +11,6 @@ import { configureStore } from '@reduxjs/toolkit'
 import structuredClone from '@ungap/structured-clone';
 import { rejects } from 'assert';
 
-
-
 //-------------------------
 //Testing/System/DataSource
 //-------------------------
@@ -55,7 +53,6 @@ function reducerCustomData(customdata:CCustomData[] = new Array<CCustomData>(), 
 
 //const reduxStore = createStore(reducerCustomData as any);
 const reduxStore = configureStore({ reducer: reducerCustomData });
-//const reduxStore = configureStore(reducerCustomData as any);
 
 //Save data to store
 //dispatch({ type: "CUSTOMDATA/SETCUSTOMDATA", data1: data });
@@ -118,7 +115,7 @@ function CustomLib(props:any) {
     //Init Dispatch
     const dispatch = useDispatch();
     
-    //Init panel data
+    //Init data / load data
     useEffect(() => {
 
         if(DATA_SOURCE=="TEST") {
