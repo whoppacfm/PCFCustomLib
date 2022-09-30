@@ -105,13 +105,7 @@ function CustomLib(props:any) {
         config_lists = props.context.parameters?.Lists?.raw;
     }
     */
-
-    //Load Metadata
-    // TODO
-
-    //Retrieve Multiple
-    // TODO
-
+    
     //Init Dispatch
     const dispatch = useDispatch();
     
